@@ -4,20 +4,22 @@
     <n-button icon="setting" icon-position="right">设置</n-button>
     <n-button loading icon-position="right">加载中</n-button>
     <n-button @click="clickToLoading" :loading="isLoading" icon-position="right">加载中</n-button>
-    <button-group>
-      <n-button icon="left">left</n-button>
-      <n-button>more</n-button>
-      <n-button icon="right" icon-position="right">right</n-button>
-    </button-group>
+    <div>
+      <button-group>
+        <n-button icon="setting" loading>left</n-button>
+        <n-button>more</n-button>
+        <n-button icon="right" icon-position="right">right</n-button>
+      </button-group>
+    </div>
   </div>
 </template>
 
 <script>
-import NButton from './components/button'
-import ButtonGroup from './components/ButtonGroup'
+import NButton from "./components/Button";
+import ButtonGroup from "./components/ButtonGroup";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
     NButton,
     ButtonGroup
@@ -25,19 +27,19 @@ export default {
   data() {
     return {
       isLoading: false
-    }
+    };
   },
   methods: {
     clickToLoading() {
-      this.isLoading = !this.isLoading 
+      this.isLoading = !this.isLoading;
     }
   }
-}
+};
 </script>
 
 <style lang="scss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

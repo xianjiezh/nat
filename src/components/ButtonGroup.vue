@@ -7,8 +7,14 @@
 <script>
 export default {
   name: 'button-group',
-
-};
+  mounted() {
+    for (let button of this.$el.children) {
+      if (button.tagName !== 'BUTTON') {
+        console.warn('button-group的子元素应该是button')
+      }
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>

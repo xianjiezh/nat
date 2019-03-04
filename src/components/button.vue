@@ -2,7 +2,7 @@
   <button class="n-button" :class="{[`icon-${iconPosition}`]: true}"
     @click="$emit('click')"
   >
-    <n-icon v-if="icon" :icon-name="icon"></n-icon>
+    <n-icon v-if="icon&&(!loading)" :icon-name="icon"></n-icon>
     <n-icon v-if="loading" icon-name="loading"></n-icon>
     <div class="content">
       <slot></slot>
