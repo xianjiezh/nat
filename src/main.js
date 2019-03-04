@@ -3,6 +3,8 @@ import App from './App'
 import NIcon from './components/icon'
 import NButton from './components/Button'
 import chai from 'chai'
+import spies from 'chai-spies'
+chai.use(spies)
 const {expect} = chai
 Vue.component('n-icon', NIcon)
 
@@ -87,12 +89,16 @@ new Vue({
   const div = document.createElement('div')
   document.body.appendChild(div)
   VueButton.$mount(div)
-  let isClick = false
-  VueButton.$on('click', () => {
-    isClick = true
-  })
-
-  let button = VueButton.$el
+  // let isClick = false
+  // VueButton.$on('click', () => {
+  //   isClick = true
+  // })
+  // let button = VueButton.$el
+  // button.click()
+  // expect(isClick).to.be.true
+  let spy = chai.spy(()=>{})
+  VueButton.$on('click', spy)
+  let button = VueButton.$el 
   button.click()
-  expect(isClick).to.be.true
+  expect(spy).to.have.be.called()
 }
