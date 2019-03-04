@@ -1,0 +1,21 @@
+$primary-back-color: #1890ff;
+$primary-back-color-hover: #40a9ff;
+$primary-back-color-active: #096dd9;
+$primary-text-color: #fff;
+// 全局主色
+$link-color: #1890ff; // 链接色
+$success-color: #52c41a; // 成功色
+$warning-color: #faad14; // 警告色
+$error-color: #f5222d;
+
+$font-size-base: 14px; // 主字号
+$heading-color: rgba(0, 0, 0, .85); // 标题色
+$text-color: rgba(0, 0, 0, .65); // 主文本色
+$text-color-secondary : rgba(0, 0, 0, .45); // 次文本色
+$disabled-color : rgba(0, 0, 0, .25);
+
+$border-radius-base: 4px; // 组件/浮层圆角
+$border-color-base: #d9d9d9;
+$border-color-hover: #40a9ff;
+$border-color-active: #096dd9;
+$box-shadow-button: 0 2px 0 rgba(0, 0, 0, 0.045);

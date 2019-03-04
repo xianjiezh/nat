@@ -24,18 +24,21 @@ export default {
 };
 </script>
   
-<style lang="scss" scoped>
+<style lang="scss" scoped> 
 .n-button {
   height: var(--button-height);
   font-size: var(--font-size);
   padding: 0 1em;
-  border-radius: var(--border-radius);
-  border: 1px solid var(--border-color);
-  background: var(--button-bg);
+  border-radius: $border-radius-base;
+  border: 1px solid $border-color-base;
+  background-color: $primary-back-color;
+  color: $primary-text-color;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   vertical-align: middle;
+  cursor: pointer;
+  box-shadow: $box-shadow-button;
   &.icon-left {
     >.icon {
       order: 1;
@@ -61,10 +64,12 @@ export default {
     padding-right: .2em;
   }
   &:hover {
-    border-color: var(--border-color-hover);
+    border-color: $border-color-hover;
+    background-color: $primary-back-color-hover;
   }
   &:active {
-    background-color: var(--button-active-bg);
+    border-color: $border-color-active;
+    background-color: $primary-back-color-active;
   }
   &:focus {
     outline: none;
