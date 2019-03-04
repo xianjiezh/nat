@@ -4,16 +4,23 @@
     <n-button icon="setting" icon-position="right">设置</n-button>
     <n-button loading icon-position="right">加载中</n-button>
     <n-button @click="clickToLoading" :loading="isLoading" icon-position="right">加载中</n-button>
+    <button-group>
+      <n-button icon="left">left</n-button>
+      <n-button>more</n-button>
+      <n-button icon="right" icon-position="right">right</n-button>
+    </button-group>
   </div>
 </template>
 
 <script>
 import NButton from './components/button'
+import ButtonGroup from './components/ButtonGroup'
 
 export default {
   name: 'app',
   components: {
     NButton,
+    ButtonGroup
   },
   data() {
     return {
