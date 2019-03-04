@@ -9,7 +9,7 @@ export default {
   name: "icon",
   props: ["iconName"],
   created() {
-    console.log(this.iconName)
+    
   }
 }
 </script>
