@@ -39,6 +39,7 @@ export default {
   vertical-align: middle;
   cursor: pointer;
   box-shadow: $box-shadow-button;
+  transition: all .3s cubic-bezier(.645, .045, .355, 1);
   &.icon-left {
     >.icon {
       order: 1;
