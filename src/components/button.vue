@@ -11,6 +11,7 @@
 </template>
 
 <script>
+import NIcon from "./Icon"
 
 export default {
   name: "n-button",
@@ -28,8 +29,11 @@ export default {
       }
     }
   },
+  components: {
+    NIcon
+  },
   created() {
-    // console.log(this.icon, this.iconPosition)
+    
   }
 };
 </script>
