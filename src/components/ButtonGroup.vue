@@ -10,7 +10,7 @@ export default {
   mounted() {
     for (let button of this.$el.children) {
       if (button.tagName !== 'BUTTON') {
-        console.warn('button-group的子元素应该是button')
+        console.warn('button-group的子元素应该是n-button')
       }
     }
   }

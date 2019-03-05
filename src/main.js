@@ -1,14 +1,15 @@
 import Vue from 'vue'
 import App from './App'
-import NIcon from './components/icon'
+import NIcon from './components/Icon'
 import NButton from './components/Button'
 import chai from 'chai'
 import spies from 'chai-spies'
 chai.use(spies)
-const {expect} = chai
+const { expect } = chai
 Vue.component('n-icon', NIcon)
 
 window.log = console.log.bind(console)
+
 new Vue({
   el: '#app',
   render(h) {
@@ -101,4 +102,6 @@ new Vue({
   let button = VueButton.$el 
   button.click()
   expect(spy).to.have.be.called()
+  button.remove()
+  VueButton.$destroy()
 }
