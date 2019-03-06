@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import NIcon from "./Icon"
+import NIcon from "./icon"
 
 export default {
   name: "n-button",

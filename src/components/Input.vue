@@ -14,7 +14,7 @@ export default {
     }
   },
   // model定义组件上v-model的行为
-  // 也就是 bind:prop和 on('event')
+  // 也就是 bind:prop和 on(event)
   model: {
     prop: 'name',
     event: 'change'

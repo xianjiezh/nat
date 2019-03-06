@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App'
-import NIcon from './components/Icon'
-import NButton from './components/Button'
+import NIcon from './components/icon'
+import NButton from './components/button'
 import chai from 'chai'
 import spies from 'chai-spies'
 chai.use(spies)

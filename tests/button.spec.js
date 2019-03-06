@@ -2,7 +2,7 @@ import chai, { expect } from 'chai'
 import sinon from 'sinon'
 import sinonChai from 'sinon-chai'
 import { shallowMount, mount } from '@vue/test-utils'
-import Button from '../src/components/Button'
+import Button from '../src/components/button'
 chai.use(sinonChai)
 
 describe('Button.vue', () => {
@@ -16,7 +16,6 @@ describe('Button.vue', () => {
             }
         })
         const useElement = wrapper.find('use')
-        console.log('useElement', useElement)
         expect(useElement.attributes()['href']).to.equal('#i-settings')
     })
     it('可以设置loading.', () => {

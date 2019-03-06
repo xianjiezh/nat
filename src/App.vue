@@ -17,9 +17,9 @@
 </template>
 
 <script>
-import NButton from "./components/Button"
-import ButtonGroup from "./components/ButtonGroup"
-import NInput from './components/Input'
+import NButton from "./components/button"
+import ButtonGroup from "./components/button-group"
+import NInput from './components/input'
 export default {
   name: "app",
   components: {
