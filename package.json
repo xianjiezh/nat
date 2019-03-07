@@ -15,7 +15,6 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.4.0",
-    "@vue/cli-plugin-eslint": "^3.4.0",
     "@vue/cli-service": "^3.4.0",
     "@vue/test-utils": "^1.0.0-beta.24",
     "babel-eslint": "^10.0.1",
@@ -41,18 +40,6 @@
     "sinon": "^7.2.7",
     "sinon-chai": "^3.3.0",
     "vue-template-compiler": "^2.5.21"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
   },
   "postcss": {
     "plugins": {

@@ -2,7 +2,6 @@
 <div id="app">
   <div class="container">
     <n-button @click="isLoading = true" :loading="isLoading">disabled</n-button>
-
   </div>
 </div>
 
@@ -39,6 +38,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
   padding: 10px;
-  height: 100vh;
 }
 </style>

@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     buttonClickEvent() {
-      if (!this.disabled) {
+      if (!this.loading) {
         this.$emit('click')
       }
     }
