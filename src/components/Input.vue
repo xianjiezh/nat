@@ -2,7 +2,6 @@
   <div class="n-input-wrapper">
     <input :value="name" @input="onInput($event)" class="n-input" type="text">
   </div>
-
 </template>
 
 <script>
@@ -17,14 +16,14 @@ export default {
   // 也就是 bind:prop和 on(event)
   model: {
     prop: 'name',
-    event: 'change'
+    event: 'xxx'
   },
   props: {
     name: String
   },
   methods: {
     onInput(e) {
-      this.$emit('change', e.target.value)
+      this.$emit('xxx', e.target.value)
     }
   }
 }
@@ -34,6 +33,8 @@ export default {
 .n-input-wrapper {
   .n-input {
     padding: 4px 7px;
+    border-radius: $border-radius-base;
+    height: $primary-height;
   }
 }
 </style>
