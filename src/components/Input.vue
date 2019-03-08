@@ -1,5 +1,5 @@
 <template>
-  <div class="n-input-wrapper">
+   <div class="n-input-wrapper">
     <input :value="name" @input="onInput($event)" class="n-input" type="text">
   </div>
 </template>

@@ -1,10 +1,7 @@
 import chai, { expect } from 'chai'
 import sinon from 'sinon'
 import sinonChai from 'sinon-chai'
-import {
-  shallowMount,
-  mount
-} from '@vue/test-utils'
+import { shallowMount, mount } from '@vue/test-utils'
 import Button from '../src/components/button'
 chai.use(sinonChai)
 
@@ -33,7 +30,6 @@ describe('Button.vue', () => {
     expect(useElements.length).to.equal(1)
     expect(useElements[0].getAttribute('xlink:href')).to.equal('#i-loading')
   })
-
   it('icon 默认的 order 是 1', () => {
     const wrapper = mount(Button, {
       attachToDocument: true,
@@ -45,7 +41,6 @@ describe('Button.vue', () => {
     const icon = vm.$el.querySelector('svg')
     expect(getComputedStyle(icon).order).to.eq('1')
   })
-
   it('设置 iconPosition 可以改变 order', () => {
     const wrapper = mount(Button, {
       attachToDocument: true,
@@ -84,3 +79,4 @@ describe('Button.vue', () => {
     expect(callback).not.have.been.called
   })
 })
+

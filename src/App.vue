@@ -1,7 +1,12 @@
 <template>
 <div id="app">
   <div class="container">
-    <n-button @click="isLoading = true" :loading="isLoading">disabled</n-button>
+    <n-button type="primary" icon="setting">primary</n-button>
+    <!-- <n-button type="dashed" icon="setting">hhh</n-button> -->
+    
+    <n-button type="dashed" icon="left">dashed</n-button>
+    <n-button icon="left">default</n-button>
+    <n-button type="danger" icon="left">danger</n-button>
   </div>
 </div>
 
@@ -22,7 +27,7 @@ export default {
     return {
       isLoading: false,
       name: 'xxx',
-    };
+    }
   },
   methods: {
   }
