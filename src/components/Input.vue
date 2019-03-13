@@ -8,7 +8,7 @@
       class="n-input" 
       :type="inputType">
     <n-icon @click="clearInput" icon-name="clear" v-if="clearable"></n-icon>
-    <n-icon @click="passwordClick" :icon-name="passwordIcon" v-if="type==='password'"></n-icon>
+    <n-icon @click="passwordClick" :icon-name="passwordIcon" style="display: inline" v-if="type==='password'"></n-icon>
   </div>
 </template>
 
@@ -20,18 +20,11 @@ export default {
     NIcon
   },
   computed: {
-    inputType: {
-      get() {
-        return this.type
-      },
-      set(newValue) {
-
-      }
-    }
   },
   data() {
     return {
-      passwordIcon: 'eye'
+      passwordIcon: 'eye',
+      inputType: 'text'
     }
   },
   // model定义组件上v-model的行为
@@ -81,6 +74,9 @@ export default {
         this.inputType = 'password'
       }
     }
+  },
+  created() {
+    this.inputType = this.type
   }
 }
 </script>
