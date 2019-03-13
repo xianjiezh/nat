@@ -62,17 +62,6 @@ export default {
   components: {
     NIcon
   },
-  computed: {
-    iconColor() {
-      const colors = {
-        primary: '#fff',
-        dashed: 'rgba(0, 0, 0, 0.63)',
-        default: 'rgba(0, 0, 0, 0.66)',
-        danger: '#f5222d',
-      }
-      return colors[this.type]
-    }
-  },
   methods: {
     buttonClickEvent() {
       if (!this.loading) {
@@ -81,7 +70,6 @@ export default {
     }
   },
   created() {
-    // log('iconColor', this.iconColor)
   }
 }
 </script>

@@ -78,5 +78,14 @@ describe('Button.vue', () => {
     vm.$el.click()
     expect(callback).not.have.been.called
   })
+  it('可以设置type', () => {
+    const wrapper = mount(Button, {
+      propsData: {
+        type: 'danger'
+      }
+    })
+    const el = wrapper.vm.$el
+    expect(el.classList.contains('btn-danger')).to.be.true
+  })
 })
 
