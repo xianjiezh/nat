@@ -1,5 +1,5 @@
 <template>
-  <svg :class="{icon: true, loading: iconName==='loading'}">
+  <svg @click="$emit('click')" :class="{icon: true, loading: iconName==='loading'}">
     <use v-if="!hoverColor" :xlink:href="`#i-${iconName}`"></use>
     <use v-if="hoverColor"  :style="`fill: ${hoverColor}`" :xlink:href="`#i-${iconName}`"></use>
   </svg>
