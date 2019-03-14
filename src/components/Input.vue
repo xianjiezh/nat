@@ -1,7 +1,7 @@
 <template>
-   <div class="n-input-wrapper">
+   <div :style="`width: ${width};`" class="n-input-wrapper">
     <input
-      :style="`width: ${width}`" 
+      :style="`width: ${width}; height: ${inputHeight}`" 
       :value="inputValue" 
       :placeholder="placeholder" 
       @input="onInput($event)" 
@@ -20,6 +20,14 @@ export default {
     NIcon
   },
   computed: {
+    inputHeight() {
+      const sizes = {
+        small: '24px',
+        default: '32px',
+        large: '40px',
+      }
+      return sizes[this.size]
+    }
   },
   data() {
     return {
@@ -55,6 +63,13 @@ export default {
         const posible = ['text', 'textarea', 'password']
         return posible.indexOf(value) > -1
       },
+    },
+    size: {
+      type: String,
+      default: 'default',
+      validator(value) {
+        return value === 'large' || value === 'small'| value === 'default'
+      }
     }
   },
   methods: {

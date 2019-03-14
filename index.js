@@ -1,9 +1,11 @@
-import Button from './src/components/button'
-import Icon from './src/components/icon'
+import NButton from './src/components/button'
+import NIcon from './src/components/icon'
 import ButtonGroup from './src/components/button-group'
+import NInput from './src/components/input'
 
 export {
-  Button,
-  Icon,
+  NButton,
+  NIcon,
   ButtonGroup,
+  Ninput,
 }

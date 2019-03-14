@@ -7,7 +7,7 @@
     <n-button icon="left">default</n-button>
     <n-button type="danger" icon="left">danger</n-button> -->
     <!-- <n-input v-model="value" placeholder="aaa" clearable></n-input> -->
-    <n-input v-model="value" placeholder="placeholder" type="password"></n-input>
+    <n-input width="200px" v-model="value" placeholder="placeholder"></n-input>
     <div>{{value}}</div>
   </div>
 </div>
@@ -17,7 +17,7 @@
 import NButton from "./components/button"
 import ButtonGroup from "./components/button-group"
 import NInput from './components/input'
-
+import NCrousel from './components/carousel'
 export default {
   name: "app",
   components: {
