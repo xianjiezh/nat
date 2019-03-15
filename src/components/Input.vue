@@ -26,7 +26,7 @@ export default {
         default: '32px',
         large: '40px',
       }
-      return sizes[this.size]
+      return !!sizes[this.size]
     }
   },
   data() {
