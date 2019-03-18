@@ -11,7 +11,7 @@
     <n-icon @click="passwordClick" :icon-name="passwordIcon" style="display: inline" v-if="type==='password'"></n-icon>
   </div>
 </template>
-
+ 
 <script>
 import NIcon from './icon'
 export default {
